@@ -1,7 +1,9 @@
+import MapView from "./mapview/mapview";
+
 function App() {
     return (
-      <div className="App">
-        <h1>hello</h1>
+      <div className="app-container">
+        <MapView />
       </div>
     );
   }
