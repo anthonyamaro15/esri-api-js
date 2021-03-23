@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "@arcgis/core/assets/esri/themes/dark/main.css";
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 body,
-.root {
+.app-container {
   overflow: hidden;
   position: fixed;
   width: 100vw;
@@ -21,25 +21,10 @@ body,
     flex-direction: column;
     height: 100%;
     width: 100%;
+
+  .mapview {
+    height: 100%;
+    width: 100%;
   }
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  cursor: pointer;
-
-  &.styleless-button {
-    // BELOW RESETS DEFAULT BUTTON STYLING
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
   }
 }
